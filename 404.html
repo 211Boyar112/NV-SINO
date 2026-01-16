@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="de-DE">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Seite nicht gefunden - 404</title>
+  <meta name="description" content="Die angeforderte Seite konnte nicht gefunden werden. Zurück zur Startseite oder Nutzung der Navigation. NVcasino Online Informationsportal. 18+." />
+  <meta name="robots" content="noindex,nofollow" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/images/favicon.png" type="image/png" />
+  <link rel="shortcut icon" href="/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Seite nicht gefunden (404) – NVcasino Online" />
+  <meta property="og:description" content="Die angeforderte Seite konnte nicht gefunden werden." />
+  <meta property="og:url" content="https://nvcasino.it.com/404" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#0b0b0b;
+      --muted:#4a4a4a;
+      --line:#e7e7e7;
+      --card:#f7f7f7;
+      --accent:#111111;
+      --btn:#111111;
+      --btnText:#ffffff;
+      --error:#d32f2f;
+      --max:1100px;
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.65;
+      display:flex;
+      flex-direction:column;
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
+    header{
+      padding:22px 0 10px;
+      border-bottom:1px solid var(--line);
+      background:#fff;
+    }
+    .top{
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+      flex-wrap:wrap;
+    }
+    .brand{display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:.2px}
+    .brand img{
+      width:36px; height:36px; border-radius:10px; object-fit:cover;
+      border:1px solid var(--line);
+      background:var(--card);
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:12px 18px;
+      border-radius:999px;
+      border:1px solid var(--accent);
+      background:var(--btn);
+      color:var(--btnText);
+      text-decoration:none;
+      font-weight:800;
+      font-size:15px;
+      white-space:nowrap;
+      transition:all 0.2s ease;
+    }
+    .btn:hover{
+      transform:translateY(-2px);
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    }
+    .btn.ghost{
+      background:#fff;
+      color:var(--text);
+      border-color:var(--line);
+    }
+    main{
+      flex:1;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:40px 0;
+    }
+    .error-content{
+      text-align:center;
+      max-width:600px;
+      margin:0 auto;
+    }
+    .error-code{
+      font-size:120px;
+      font-weight:900;
+      line-height:1;
+      color:var(--error);
+      margin-bottom:20px;
+      letter-spacing:-5px;
+    }
+    h1{
+      margin:0 0 15px;
+      font-size:32px; line-height:1.1;
+      letter-spacing:.2px;
+    }
+    p{
+      margin:0 0 20px;
+      color:var(--muted);
+      font-size:16px;
+    }
+    .error-actions{
+      display:flex;
+      gap:15px;
+      justify-content:center;
+      flex-wrap:wrap;
+      margin-top:30px;
+    }
+    .search-box{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:25px;
+      margin:30px 0;
+      text-align:left;
+    }
+    .search-box h3{
+      margin-top:0;
+      margin-bottom:15px;
+    }
+    .site-map{
+      background:white;
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:25px;
+      margin-top:30px;
+    }
+    .site-map h3{
+      margin-top:0;
+      margin-bottom:15px;
+      text-align:center;
+    }
+    .site-links{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+      gap:15px;
+      margin-top:15px;
+    }
+    .site-links a{
+      display:block;
+      padding:12px 15px;
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:10px;
+      text-decoration:none;
+      color:var(--muted);
+      font-weight:700;
+      transition:all 0.2s ease;
+    }
+    .site-links a:hover{
+      background:var(--accent);
+      color:white;
+      transform:translateY(-2px);
+    }
+    .error-icon{
+      font-size:80px;
+      margin-bottom:20px;
+      display:block;
+      color:var(--error);
+    }
+
+    /* Footer стили */
+    footer{
+      margin-top:auto;
+      border-top:1px solid var(--line);
+      padding:18px 0 28px;
+      color:var(--muted);
+    }
+    .foot-top{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:20px;
+      margin-bottom:20px;
+    }
+    .foot-links{display:flex; gap:14px; flex-wrap:wrap}
+    .foot-links a{color:var(--muted); text-decoration:none; font-weight:700}
+    .foot-links a:hover{text-decoration:underline; color:var(--text)}
+    
+    /* Логотипы ответственной игры */
+    .responsible-logos{
+      display:flex;
+      gap:15px;
+      align-items:center;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+    .responsible-logos img{
+      height:30px;
+      width:auto;
+      opacity:0.8;
+      transition:opacity 0.2s ease;
+    }
+    .responsible-logos img:hover{
+      opacity:1;
+    }
+    
+    .legal-note{
+      margin-top:20px;
+      font-size:13px;
+      text-align:center;
+      color:var(--muted);
+    }
+    .warn{
+      margin-top:20px;
+      border:1px solid var(--line);
+      background:var(--card);
+      padding:16px;
+      border-radius:var(--radius);
+      font-size:13px;
+      text-align:center;
+    }
+
+    @media (max-width: 920px){
+      .error-code{
+        font-size:80px;
+        letter-spacing:-3px;
+      }
+      h1{font-size:28px}
+      .foot-top{
+        flex-direction:column;
+        text-align:center;
+        gap:15px;
+      }
+      .foot-links{
+        justify-content:center;
+      }
+      .responsible-logos img{
+        height:24px;
+      }
+      .error-actions{
+        flex-direction:column;
+        align-items:center;
+      }
+      .error-actions .btn{
+        width:100%;
+        max-width:300px;
+      }
+    }
+    
+    @media (max-width: 480px){
+      .responsible-logos{
+        gap:10px;
+      }
+      .responsible-logos img{
+        height:22px;
+      }
+      .error-code{
+        font-size:60px;
+      }
+      h1{font-size:24px}
+      .site-links{
+        grid-template-columns:1fr;
+      }
+      .brand span{
+        font-size:14px;
+      }
+    }
+  </style>
+
+  <!-- Schema.org разметка для 404 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Seite nicht gefunden (404) – NVcasino Online",
+    "description": "Die angeforderte Seite konnte nicht gefunden werden.",
+    "url": "https://nvcasino.it.com/404",
+    "inLanguage": "de-DE",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "NVcasino Online",
+      "url": "https://nvcasino.it.com/"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <div class="top">
+        <div class="brand">
+          <img src="/images/logo.png" alt="NVcasino Logo" onerror="this.style.display='none'">
+          <span>NVcasino Online</span>
+        </div>
+        <a class="btn ghost" href="/">Zur Startseite</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="error-content">
+        <div class="error-icon">🔍</div>
+        <div class="error-code">404</div>
+        
+        <h1>Seite nicht gefunden</h1>
+        
+        <p>
+          Die von Ihnen angeforderte Seite existiert leider nicht oder wurde verschoben. 
+          Möglicherweise haben Sie einen veralteten Link verwendet oder sich vertippt.
+        </p>
+        
+        <div class="error-actions">
+          <a class="btn" href="/">Zur Startseite</a>
+          <a class="btn ghost" href="javascript:history.back()">Zurück zur vorherigen Seite</a>
+        </div>
+
+        <div class="search-box">
+          <h3>Mögliche Lösungen:</h3>
+          <ul style="margin:0; padding-left:20px; color:var(--muted);">
+            <li>Überprüfen Sie die URL auf Tippfehler</li>
+            <li>Nutzen Sie die Navigation oben auf der Seite</li>
+            <li>Besuchen Sie unsere Startseite für eine Übersicht</li>
+            <li>Nutzen Sie die Sitemap unten für eine direkte Navigation</li>
+          </ul>
+        </div>
+
+        <div class="site-map">
+          <h3>Beliebte Seiten auf unserer Website:</h3>
+          <div class="site-links">
+            <a href="/">Startseite</a>
+            <a href="/#ueberblick">NVcasino Überblick</a>
+            <a href="/#login">NVcasino Login</a>
+            <a href="/#app">NVcasino App & Download</a>
+            <a href="/#bonus">NVcasino Bonus</a>
+            <a href="/#zahlungen">Einzahlung & Auszahlung</a>
+            <a href="/#sicherheit">Sicherheit & Legitimität</a>
+            <a href="/#faq">Häufige Fragen (FAQ)</a>
+          </div>
+          
+          <div style="margin-top:20px; padding-top:15px; border-top:1px solid var(--line);">
+            <h4 style="margin-bottom:10px;">Rechtliche Seiten:</h4>
+            <div class="site-links">
+              <a href="/privacy-policy">Datenschutzerklärung</a>
+              <a href="/terms">Allgemeine Geschäftsbedingungen (AGB)</a>
+              <a href="/responsible-gaming">Responsible Gaming</a>
+              <a href="/disclaimer">Disclaimer</a>
+              <a href="/contact">Kontakt & Impressum</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:30px; padding:20px; background:#f8f9fa; border-radius:var(--radius);">
+          <h3 style="margin-top:0;">Technischer Support</h3>
+          <p style="margin-bottom:10px;">
+            Wenn Sie glauben, dass dies ein technischer Fehler ist oder eine Seite 
+            fehlt, kontaktieren Sie uns bitte:
+          </p>
+          <a href="mailto:info@nvcasino.it.com" style="color:var(--accent); font-weight:700;">
+            info@nvcasino.it.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-top">
+        <div class="foot-links">
+          <a href="/">Startseite</a>
+          <a href="/privacy-policy">Datenschutz</a>
+          <a href="/terms">AGB</a>
+          <a href="/responsible-gaming">Responsible Gaming</a>
+          <a href="/disclaimer">Disclaimer</a>
+          <a href="/contact">Kontakt</a>
+        </div>
+        
+        <div class="responsible-logos" aria-label="Logos für verantwortungsvolles Spielen">
+          <img src="/images/footer-18plus.png" alt="18+ Nur für Erwachsene" loading="lazy">
+          <img src="/images/footer-begambleaware.png" alt="BeGambleAware" loading="lazy">
+          <img src="/images/footer-betblocker.png" alt="BetBlocker" loading="lazy">
+          <img src="/images/footer-gamban.png" alt="Gamban" loading="lazy">
+          <img src="/images/footer-gamcare.png" alt="GamCare" loading="lazy">
+        </div>
+      </div>
+
+      <div class="legal-note">
+        © <span id="y"></span> nvcasino.it.com • Informationsseite (18+) • Alle Inhalte dienen nur zu Informationszwecken.
+      </div>
+
+      <div class="warn">
+        <strong>Hinweis:</strong> Diese Website ist ein reines Informationsportal und bietet keine 
+        Glücksspielmöglichkeiten an. Glücksspiel kann süchtig machen. Spielen Sie verantwortungsvoll.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    
+    // Добавляем обработку ошибок для изображений в футере
+    document.addEventListener('DOMContentLoaded', function() {
+      const footerImages = document.querySelectorAll('.responsible-logos img');
+      footerImages.forEach(img => {
+        img.onerror = function() {
+          this.style.display = 'none';
+        };
+      });
+      
+      // Автоматический поиск по URL для предложения похожих страниц
+      function suggestSimilarPages() {
+        const currentPath = window.location.pathname;
+        const commonErrors = {
+          'nvcasino-login': '/#login',
+          'nvcasino-app': '/#app',
+          'nvcasino-bonus': '/#bonus',
+          'nvcasino-download': '/#app',
+          'kontakt': '/contact',
+          'impressum': '/contact',
+          'datenschutz': '/privacy-policy',
+          'agb': '/terms'
+        };
+        
+        // Проверяем, содержит ли URL ключевые слова
+        for (const [keyword, correctPath] of Object.entries(commonErrors)) {
+          if (currentPath.toLowerCase().includes(keyword)) {
+            const suggestionDiv = document.createElement('div');
+            suggestionDiv.style.cssText = `
+              margin-top: 15px;
+              padding: 15px;
+              background: #e8f5e9;
+              border-radius: 10px;
+              border: 1px solid #2e7d32;
+            `;
+            suggestionDiv.innerHTML = `
+              <p style="margin: 0 0 10px; font-weight: 700;">
+                Suchten Sie vielleicht: 
+                <a href="${correctPath}" style="color: #2e7d32; text-decoration: underline;">
+                  ${keyword.replace('-', ' ')}
+                </a>
+              </p>
+            `;
+            
+            const errorContent = document.querySelector('.error-content');
+            if (errorContent) {
+              const searchBox = errorContent.querySelector('.search-box');
+              if (searchBox) {
+                searchBox.parentNode.insertBefore(suggestionDiv, searchBox);
+              }
+            }
+            break;
+          }
+        }
+      }
+      
+      suggestSimilarPages();
+    });
+  </script>
+</body>
+</html>
